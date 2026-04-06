@@ -1,6 +1,13 @@
-# Locomotive Clone Exercise (Next.js)
+# FRC Legends Mission Control
 
-A reconstructed clone-oriented single-page website inspired by `https://locomotive.ca/en`.
+A futuristic Next.js web experience for elite FIRST Robotics Competition teams.
+
+## Stack
+- Next.js + React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- Three.js
+- Chart.js
 
 ## Run locally
 ```bash
@@ -8,8 +15,12 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+## Environment variables
+Create `.env.local`:
 
-## Notes
-- This build focuses on a clean, high-fidelity visual emulation structure in Next.js.
-- Research notes are stored under `docs/research/locomotive.ca/`.
+```bash
+NEXT_PUBLIC_FRC_TEAM=254
+TBA_API_KEY=your_blue_alliance_key
+```
+
+`/api/live` merges data from Statbotics and The Blue Alliance, with graceful fallbacks when API credentials are missing.
